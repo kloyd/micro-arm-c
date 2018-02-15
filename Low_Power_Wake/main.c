@@ -22,7 +22,7 @@ main()
     TA0CTL = ACLK | UP | SLOW;
     TA0CCTL0 = CCIE;
 
-    P1OUT = 0x01;   // red led on
+    //P1OUT = 0x01;   // red led on (wastes electricity... but would be okay if it was controlling a l
 
     _BIS_SR(LPM0_bits | GIE);
 
